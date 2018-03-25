@@ -31,9 +31,7 @@ page 5\
                         {
                             "title":"page 1.1",
                             "isRoot":false,
-                            "children":[
-
-                            ]
+                            "children":[]
                         },
                         {
                             "title":"page 1.2",
@@ -42,9 +40,7 @@ page 5\
                                 {
                                     "title":"page 1.2.1",
                                     "isRoot":false,
-                                    "children":[
-
-                                    ]
+                                    "children":[]
                                 }
                             ]
                         }
@@ -53,9 +49,7 @@ page 5\
                 {
                     "title":"page 2",
                     "isRoot":false,
-                    "children":[
-
-                    ]
+                    "children":[]
                 },
                 {
                     "title":"page 3",
@@ -64,16 +58,12 @@ page 5\
                         {
                             "title":"page 3.1",
                             "isRoot":false,
-                            "children":[
-
-                            ]
+                            "children":[]
                         },
                         {
                             "title":"page 3.2",
                             "isRoot":false,
-                            "children":[
-
-                            ]
+                            "children":[]
                         }
                     ]
                 },
@@ -92,9 +82,7 @@ page 5\
                                         {
                                             "title":"page 4.1.1.1",
                                             "isRoot":false,
-                                            "children":[
-
-                                            ]
+                                            "children":[]
                                         }
                                     ]
                                 }
@@ -103,23 +91,21 @@ page 5\
                         {
                             "title":"page 4.2",
                             "isRoot":false,
-                            "children":[
-
-                            ]
+                            "children":[]
                         }
                     ]
                 },
                 {
                     "title":"page 5",
                     "isRoot":false,
-                    "children":[
-
-                    ]
+                    "children":[]
                 }
             ]
         };
 
-        expect(parseTree(testInput)).equals(expectedOutput);
+        const tree = parseTree(testInput);
+
+        expect(tree).toEqual(expectedOutput);
     });
 
 
